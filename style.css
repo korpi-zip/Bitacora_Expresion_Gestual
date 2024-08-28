@@ -1,0 +1,21 @@
+:root {
+    --color-rojo: #FF0000; /* Rojo */
+    --color-negro: #000000; /* Negro */
+}
+
+header {
+    text-align: center;
+    /* Agrega más estilos aquí si es necesario */
+}
+.elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo de la columna a 200px y usa 1fr para llenar el espacio disponible */
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+    justify-content: center; /* Centra los elementos en el contenedor si hay espacio adicional */
+}
+
+.elements img {
+    width: 100%; /* Hace que las imágenes se ajusten al ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+}
