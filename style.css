@@ -1,11 +1,59 @@
 :root {
-    --color-rojo: #FF0000; /* Rojo */
-    --color-negro: #000000; /* Negro */
+    --color1: #99b898;
+    --color2: #fecea8;
+    --color3: #ff847c;
+    --color4: #e84a5f;
+    --color5: #2a363b;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color1);
+}
+
 
 header {
     text-align: center;
+    background-color: var(--color4);
     /* Agrega más estilos aquí si es necesario */
+}
+
+nav{
+    text-align: center;
+    background-color: var(--color4);
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--color5);
+    font-size: 1em;
+
+}
+
+article {
+    margin-top: 20px;
+    background-color: var(--color2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fecha{
+    font-size: 0.8em;
+    color: var(--color5);
+}
+.quote{ 
+    font-style: italic;
+    color: var(--color5);
+
 }
 .elements {
     display: grid;
@@ -18,4 +66,15 @@ header {
     width: 100%; /* Hace que las imágenes se ajusten al ancho de su contenedor */
     height: auto; /* Mantiene la proporción de aspecto de las imágenes */
     object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: var(--color4);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--color5);
+    font-size: 1em;
 }
