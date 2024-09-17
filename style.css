@@ -68,6 +68,15 @@ article {
     object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
 }
 
+.marioneta{
+    display: grid;
+}
+
+.marioneta img {
+    width: 50%;
+    justify-self: center;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
