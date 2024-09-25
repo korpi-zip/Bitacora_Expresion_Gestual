@@ -76,7 +76,7 @@ function cargarNav() {
 }
 async function cargarArticulo(num) {
     try {
-        const response = await fetch(`templates/articles/article${num}.html`);
+        const response = await fetch(`Bitacora_Expresion_Gestual/templates/articles/article${num}.html`);
         if (!response.ok) {
             console.error(`Error ${response.status}: No se pudo cargar el artículo ${num}`);
             return `<p>Error al cargar el artículo ${num}</p>`;
